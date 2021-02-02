@@ -8,14 +8,13 @@
     <title>Document</title>
 </head>
 <body>
-<img src=".git/images/logop.png" class="logop" alt="logo" width="150" height="150" >
+    <?php
+    include('logo.php')
+    ?>
 <!-- Top navigation menu -->
-<div class="menu">
-<a class="active" href="index.php">Home</a>
-<a href="service">Service</a>
-<a href="voorlichting">Voorlichting</a>
-<a href="inlog">Mijn APO (inlog)</a>
-</div>
+<?php
+include('menu.php')
+?>
 <!--slideshow place holder -->
 <img src=".git/images/placeholderimage.png" alt="placeholder" width="600" height="300">
 <!-- google maps map -->
