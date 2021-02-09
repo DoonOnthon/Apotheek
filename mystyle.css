@@ -35,3 +35,84 @@ body {
 .gmap_canvas {
     overflow:hidden;background:none!important;height:300px;width:300px;
 }
+.times {
+    position:absolute; right:1200px; top:650px;
+    width:300px;
+    border: 1px solid black;
+    padding: 1px;
+    margin: 0px;
+}
+.adress {
+    position:absolute; right:880px; top:650px;
+    width:300px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 0px;
+}
+.herhaal {
+    position:absolute; right:1400px; top:550px;
+    background-color: #91b4ed;
+    width:100px;
+    border: 1px solid black;
+    padding: 8px;
+    margin: 0px;
+}
+.herhaal a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.herhaal a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.medicin{
+    position:absolute; right:1280px; top:550px;
+    background-color: #91b4ed;
+    width:100px;
+    border: 1px solid black;
+    padding: 8px;
+    margin: 0px;
+}
+.medicin a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.medicin a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.register{
+    position:absolute; right:1160px; top:550px;
+    background-color: #91b4ed;
+    width:100px;
+    border: 1px solid black;
+    padding: 8px;
+    margin: 0px;
+}
+.register a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.register a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.news {
+    position:absolute; right:1160px; top:800px;
+    width:300px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 5px;
+}

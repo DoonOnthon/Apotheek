@@ -28,7 +28,32 @@ include('menu.php')
     </div>
     </div>
 </div>
-
+<!--Herhaalservice-->
+<div class ="herhaal">
+<a href="herhaal.php">Herhaal service</a>
+</div>
+<!--medicine overview-->
+<div class ="medicin">
+<a href="medicin.php">Medicijnen overzicht</a>
+</div>
+<!--register-->`
+<div class ="register">
+<a href="register.php">Inschrijven</a>
+</div>
+<!-- open times -->
+<div class ="times">
+    <h4>opening times</h4>
+    <p>monday to friday: 10:00 - 16:00</p>
+    <p>saturday to sunday : closed</p>
+</div>
+<!-- adresses -->
+</div>
+<div class ="adress">
+<h4> adress </h4>
+<p>adress : placeholder </p>
+</div>
+<div class ="news">
+    <h4>Nieuws</h4>
     <?php
     ?>
 </body>
