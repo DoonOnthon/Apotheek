@@ -18,50 +18,32 @@ include('menu.php')
 ?>
 <!--slideshow place holder -->
 
-<body>  
-    <div class="slidercontainer">  
-        <div class="showSlide fade">  
-            <img src=".git/images/placeholderimage.png" width="600" height="300"> />  
-            <div class="content">Lorem ipsum dolor sit amet</div>  
-        </div>  
-        <div class="showSlide fade">  
-            <img src=".git/images/placeholder2.jpg" width="600" height="300"> />  
-            <div class="content">Lorem ipsum dolor sit amet</div>  
-        </div>  
-  
-        <div class="showSlide fade">  
-            <img src=".git/images/placeholder3.jpg"width="600" height="300"> />  
-            <div class="content">Lorem ipsum dolor sit amet</div>  
-        </div>  
-        <div class="showSlide fade">  
-            <img src=".git/images/logop.png"width="600" height="300"> />  
-            <div class="content">Lorem ipsum dolor sit amet</div>  
-        </div>  
-        <!-- Navigation arrows -->  
-        <a class="left" onclick="nextSlide(-1)">❮</a>  
-        <a class="right" onclick="nextSlide(1)">❯</a>  
-    </div> 
+<img class="mySlides" src=".git/images/placeholderimage.png" alt="placeholder" width="600" height="300">
+<img class="mySlides" src=".git/images/placeholder2.jpg" alt="placeholder" width="600" height="300">
+<img class="mySlides" src=".git/images/placeholder3.jpg" alt="placeholder" width="600" height="300">
+<img class="mySlides" src=".git/images/logop.png" alt="placeholder" width="600" height="300">
+<button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="button-right" onclick="plusDivs(+1)">&#10095;</button>
+ <!-- java script-->
     <script type="text/javascript">  
-        var slide_index = 1;  
-        displaySlides(slide_index);  
-        function nextSlide(n) {  
-            displaySlides(slide_index += n);  
-        }  
-        function currentSlide(n) {  
-            displaySlides(slide_index = n);  
-        }  
-        function displaySlides(n) {  
-            var i;  
-            var slides = document.getElementsByClassName("showSlide");  
-            if (n > slides.length) { slide_index = 1 }  
-            if (n < 1) { slide_index = slides.length }  
-            for (i = 0; i < slides.length; i++) {  
-                slides[i].style.display = "none";  
-            }  
-            slides[slide_index - 1].style.display = "block";  
-        }  
-</script>   
-</body>   
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>     
 
 <!--google maps map -->
 <div class="map-container">
