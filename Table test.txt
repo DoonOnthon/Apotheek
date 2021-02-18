@@ -1,0 +1,13 @@
+`nieuws` (
+id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+subject varchat(128) NOT NULL,
+content VARCHAR(1000) NOT NULL,
+DATE DATETIME NOT NULL,
+);
+
+INSERT INTO nieuws1 (subject, content, date) VALUES ('This is the subject', 'just a test lads',
+'2021-2-18 10:55:38');
+
+DELETE FROM nieuws1
+WHERE id='1'
+
