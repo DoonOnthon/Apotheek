@@ -18,13 +18,14 @@ include_once 'dbh.inc.php';
 include('menu.php')
 ?>
 <!--slideshow place holder -->
-
+<div class="slideshow">
 <img class="mySlides" src=".git/images/placeholderimage.png" alt="placeholder" width="600" height="300">
 <img class="mySlides" src=".git/images/placeholder2.jpg" alt="placeholder" width="600" height="300">
 <img class="mySlides" src=".git/images/placeholder3.jpg" alt="placeholder" width="600" height="300">
 <img class="mySlides" src=".git/images/logop.png" alt="placeholder" width="600" height="300">
 <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
 <button class="button-right" onclick="plusDivs(+1)">&#10095;</button>
+</div>
  <!-- java script-->
     <script type="text/javascript">  
 var slideIndex = 1;
