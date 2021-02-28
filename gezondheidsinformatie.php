@@ -12,6 +12,7 @@
     include "logo.php";
     include "menu.php";
     ?>
+    <!-- info on health issues -->
 <div class="info">
     <h4>Gezondheidsinformatie</h4>
     <p>In samenwerking met Thuisarts.nl bieden wij u gezondheidsinformatie.</br>
@@ -44,11 +45,6 @@
     Ziekte van Behçet </br>
     Ziekte van Lyme </br>
 </div>
-
-
 </div>
-
-
-
 </body>
 </html>

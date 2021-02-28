@@ -15,6 +15,7 @@ include_once 'dbh.inc.php';
     include "logo.php";
     include "menu.php";
     ?>
+    <!-- Medicin overview -->
 <div class="info">
 <div class ="overzicht">
     <h4>Medicijnen overzicht</h4>
@@ -29,11 +30,6 @@ include_once 'dbh.inc.php';
       }
     ?>
 </div>
-
-
 </div>
-
-
-
 </body>
 </html>

@@ -19,22 +19,20 @@ include('menu.php')
 ?>
 <!--slideshow place holder -->
 <div class="slideshow">
-<img class="mySlides" src=".git/images/placeholderimage.png" alt="placeholder" width="600" height="300">
-<img class="mySlides" src=".git/images/placeholder2.jpg" alt="placeholder" width="600" height="300">
-<img class="mySlides" src=".git/images/placeholder3.jpg" alt="placeholder" width="600" height="300">
-<img class="mySlides" src=".git/images/logop.png" alt="placeholder" width="600" height="300">
+<img class="mySlides" src=".git/images/stock1.jpg" alt="stock image 1" width="600" height="300">
+<img class="mySlides" src=".git/images/stock2.jpg" alt="stock image 2" width="600" height="300">
+<img class="mySlides" src=".git/images/stock3.jpg" alt="stock image 3" width="600" height="300">
+<img class="mySlides" src=".git/images/logop.png" alt="logo image" width="600" height="300">
 <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
 <button class="button-right" onclick="plusDivs(+1)">&#10095;</button>
 </div>
- <!-- java script-->
+ <!-- java script slide show-->
     <script type="text/javascript">  
 var slideIndex = 1;
 showDivs(slideIndex);
-
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
-
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
@@ -45,8 +43,7 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";
 }
-</script>     
-
+</script>
 <!--google maps map -->
 <div class="map-container">
     <div class="mapouter">
@@ -73,8 +70,8 @@ function showDivs(n) {
 <!-- open times -->
 <div class ="times">
     <h4>opening times</h4>
-    <p>monday to friday: 10:00 - 16:00</p>
-    <p>saturday to sunday : closed</p>
+    <p>maandag tot vrijdag: 10:00 - 16:00</p>
+    <p>zaterdag tot zondag : dichtz</p>
 </div>
 <!-- adresses -->
 </div>
