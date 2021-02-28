@@ -10,7 +10,7 @@
 <div class="menu">
 <a class="active" href="index.php">Home</a>
 <a href="service">Service</a>
-<a href="voorlichting">Voorlichting</a>
+<a href="gezondheidsinformatie.php">Voorlichting</a>
 <a href="inlog">Mijn APO (inlog)</a>
 </div>
 </body>

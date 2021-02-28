@@ -120,8 +120,6 @@ body {
     margin: 0;  
     background: #e6e6e6;  
 }  
-
-
 .mySlides {
     max-width: 900px;  
     position: relative;  
@@ -135,4 +133,11 @@ body {
 }
 .button-right {
     position:absolute; right:940px; top: 500px; 
+}
+.info {
+    position:absolute; right:550px; top:300px;
+    width:500px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 5px;
 }

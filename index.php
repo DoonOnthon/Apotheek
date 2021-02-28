@@ -1,8 +1,9 @@
+<?php 
+include_once 'dbh.inc.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script>src="myScript.js"</script>
-    <script> </script>
     <link rel="stylesheet" href="mystyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
@@ -80,9 +81,18 @@ function showDivs(n) {
 <h4> adress </h4>
 <p>adress : placeholder </p>
 </div>
+<!-- nieuws -->
 <div class ="news">
     <h4>Nieuws</h4>
     <?php
+      $sql = "SELECT * FROM nieuws1;";
+      $result = mysqli_query($conn, $sql);
+      $resultCheck = mysqli_num_rows($result);
+      if ($resultCheck > 0) {
+        while ($row = mysqli_fetch_assoc($result)) {
+          echo $row['subject'] . "<br>";
+        }
+      }
     ?>
 </body>
 </html>
