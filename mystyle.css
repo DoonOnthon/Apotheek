@@ -11,7 +11,7 @@ body {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 17px;
     text-decoration: none;
     font-size: 17px;
 }
@@ -52,16 +52,17 @@ body {
 .herhaal {
     position:absolute; right:1200px; top:560px;
     background-color: #91b4ed;
-    width:100px;
-    border: 1px solid black;
-    padding: 8px;
-    margin: 0px;
+    border-radius: 20px;
+    border: 1px solid #73AD21;
+    padding: 20px;
+    width: 100px;
+    height: 40px
 }
 .herhaal a {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 10px;
+    padding: 2px 10px;
     text-decoration: none;
     font-size: 17px;
 }
@@ -70,18 +71,19 @@ body {
     color: black;
 }
 .medicin{
-    position:absolute; right:1080px; top:560px;
+    position:absolute; right:1050px; top:560px;
     background-color: #91b4ed;
-    width:100px;
-    border: 1px solid black;
-    padding: 8px;
-    margin: 0px;
+    border-radius: 20px;
+    border: 1px solid #73AD21;
+    padding: 20px;
+    width: 100px;
+    height: 40px
 }
 .medicin a {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 10px;
+    padding: 2px 10px;
     text-decoration: none;
     font-size: 17px;
 }
@@ -90,18 +92,19 @@ body {
     color: black;
 }
 .register{
-    position:absolute; right: 960px; top:560px;
+    position:absolute; right: 900px; top:560px;
     background-color: #91b4ed;
-    width:100px;
-    border: 1px solid black;
-    padding: 8px;
-    margin: 0px;
+    border-radius: 20px;
+    border: 1px solid #73AD21;
+    padding: 20px;
+    width: 100px;
+    height: 40px
 }
 .register a {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 10px;
+    padding: 2px 10px;
     text-decoration: none;
     font-size: 17px;
 }
