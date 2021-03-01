@@ -10,11 +10,12 @@ session_start();
     <title>Document</title>
 </head>
 <body>
-    <!-- Top navigation menu -->
+<!-- Top navigation menu -->
 <div class="menu">
 <a class="active" href="index.php">Home</a>
 <a href="service">Service</a>
 <a href="gezondheidsinformatie.php">Voorlichting</a>
+<!-- check if user is logged in -->
 <?php
 if (isset($_SESSION["useruid"])) {
     echo "<a href='profile.php'>Profiel pagina</a>";

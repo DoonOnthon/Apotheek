@@ -1,4 +1,8 @@
 <?php
+/* #############################
+   #########FUNCTIONS###########
+   #############################*/
+//Check if any forms are empty
 function emptyInputSignup($name, $email, $username, $pwd, $pwdRepeat) {
     $result;
     if (empty($name) || empty($email) || empty($username) || empty($pwd) || empty($pwdRepeat)) {
@@ -9,6 +13,7 @@ function emptyInputSignup($name, $email, $username, $pwd, $pwdRepeat) {
     }
     return $result;
 }
+// check if username contains the right characters
 function invalidUid($username) {
     $result;
     if (!preg_match("/^[a-zA-Z0-9]*$/", $username)){
@@ -19,6 +24,7 @@ function invalidUid($username) {
     }
     return $result;
 }
+// Checks if email is an actual email
 function invalidEmail($email) {
     $result;
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -29,6 +35,7 @@ function invalidEmail($email) {
     }
     return $result;
 }
+//Checks if the passwords match
 function pwdMatch($pwd, $pwdRepeat) {
     $result;
     if ($pwd !== $pwdRepeat) {
@@ -39,6 +46,7 @@ function pwdMatch($pwd, $pwdRepeat) {
     }
     return $result;
 }
+//Checks if the UID exists / error handler
 function uidExists($conn, $username, $email) {
     $sql = "SELECT * FROM users WHERE usersUid = ? OR usersEmail = ?;";
     $stmt = mysqli_stmt_init($conn);
@@ -58,6 +66,7 @@ function uidExists($conn, $username, $email) {
     }
     mysqli_stmt_close($stmt);
 }
+//Creates user and sends it to the Database
 function createUser($conn, $name, $email, $username, $pwd) {
     $sql = "INSERT INTO users (usersName, usersEmail, usersUid, usersPwd) VALUES (?, ?, ?, ?);";
     $stmt = mysqli_stmt_init($conn);
@@ -74,6 +83,7 @@ function createUser($conn, $name, $email, $username, $pwd) {
     header("location: ../signup.php?error=none");
     exit();
 }
+//Error handler empty login
 function emptyInputLogin($username, $pwd) {
     $result;
     if (empty($username) || empty($pwd)) {
@@ -84,6 +94,7 @@ function emptyInputLogin($username, $pwd) {
     }
     return $result;
 }
+//Error handler / logs in the user if done right
 function loginUser($conn, $username, $pwd) {
     $uidExists = uidExists($conn, $username, $username);
     //error handler

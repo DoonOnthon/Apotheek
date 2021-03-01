@@ -53,18 +53,11 @@ function showDivs(n) {
     </div>
     </div>
 </div>
-<!--Herhaalservice-->
-<div class ="herhaal">
-<a href="herhaal.php">Herhaal service</a>
-</div>
-<!--medicine overview-->
-<div class ="medicin">
-<a href="medicin.php">Medicijnen overzicht</a>
-</div>
-<!--register-->`
-<div class ="register">
-<a href="register.php">Inschrijven</a>
-</div>
+<!--Midden menu-->
+<section class = "midden menu">
+<?php
+include "includes/midmenu.php";
+?>
 <!-- open times -->
 <div class ="times">
     <h4>opening times</h4>

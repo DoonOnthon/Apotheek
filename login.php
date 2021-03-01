@@ -13,14 +13,16 @@
 include "includes/logo.php";
 include "includes/menu.php";
 ?>
-<section class ="signup-form">
+<!-- Login form -->
+<section class ="login-form">
     <h2>Log in</h2>
     <form action="includes/login.inc.php" method="post">
-        <input type="text" name="uid" placeholder="Username/Email...">
-        <input type="password" name="pwd" placeholder="password...">
+        <input type="text" name="uid" placeholder="Username/Email..."> </br>
+        <input type="password" name="pwd" placeholder="password..."> </br>
         <button type="submit" name="submit">Log in</button>
     </form>
     <?php
+// Error handlers
 if (isset($_GET["error"])) {
     if ($_GET["error"] == "emptyinput") {
         echo "<p>Vul alle velden in!</p>";
