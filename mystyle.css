@@ -124,10 +124,8 @@ body {
     max-width: 900px;  
     position: relative;  
     margin: 100px;  
+    position:absolute; right:650px; top:150px;
 }
-.mySlides {  
-   position:absolute; right:650px; top:150px; 
-}  
 .button-left {
     position:absolute; right:1320px; top:525px; 
 }
