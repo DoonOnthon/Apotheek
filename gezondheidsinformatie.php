@@ -9,8 +9,8 @@
 </head>
 <body>
     <?php
-    include "logo.php";
-    include "menu.php";
+    include "includes/logo.php";
+    include "includes/menu.php";
     ?>
     <!-- info on health issues -->
 <div class="info">

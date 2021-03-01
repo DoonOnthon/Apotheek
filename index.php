@@ -1,5 +1,5 @@
 <?php 
-include_once 'dbh.inc.php';
+include_once 'includes/dbh.inc.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,15 +7,13 @@ include_once 'dbh.inc.php';
     <link rel="stylesheet" href="mystyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homepage</title>
 </head>
 <body>
-    <?php
-    include('logo.php')
-    ?>
-<!-- Top navigation menu -->
+<!-- Top navigation menu & logo-->
 <?php
-include('menu.php')
+include "includes/logo.php";
+include "includes/menu.php";
 ?>
 <!--slideshow place holder -->
 <div class="slideshow">
@@ -71,7 +69,7 @@ function showDivs(n) {
 <div class ="times">
     <h4>opening times</h4>
     <p>maandag tot vrijdag: 10:00 - 16:00</p>
-    <p>zaterdag tot zondag : dichtz</p>
+    <p>zaterdag tot zondag : dicht</p>
 </div>
 <!-- adresses -->
 </div>
