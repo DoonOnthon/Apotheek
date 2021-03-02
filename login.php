@@ -8,11 +8,13 @@
     <title>register</title>
 </head>
 <body>
+<header>
 <!-- include logo / menu -->
 <?php
 include "includes/logo.php";
 include "includes/menu.php";
 ?>
+</header>
 <!-- Login form -->
 <section class ="login-form">
     <h2>Log in</h2>

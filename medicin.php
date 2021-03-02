@@ -11,10 +11,12 @@ include_once 'includes/dbh.inc.php';
     <title>Medicin overview</title>
 </head>
 <body>
+<header>
     <?php
     include "includes/logo.php";
     include "includes/menu.php";
     ?>
+</header>
     <!-- Medicin overview -->
 <div class="info">
 <div class ="overzicht">

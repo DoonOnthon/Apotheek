@@ -35,20 +35,25 @@ body {
 .gmap_canvas {
     overflow:hidden;background:none!important;height:300px;width:300px;
 }
+/* Opening times */
 .times {
+    background-color: #dedcdc;
     position:absolute; right:1050px; top:650px;
     width:300px;
     border: 1px solid black;
     padding: 1px;
     margin: 0px;
 }
+/* the adress */
 .adress {
+    background-color: #dedcdc;
     position:absolute; right:680px; top:650px;
     width:300px;
     border: 1px solid black;
     padding: 5px;
     margin: 0px;
 }
+/* repeat service */
 .herhaal {
     position:absolute; right:1200px; top:560px;
     background-color: #91b4ed;
@@ -70,6 +75,7 @@ body {
     background-color: #A4C0EF;
     color: black;
 }
+/* medicin overview */
 .medicin{
     position:absolute; right:1050px; top:560px;
     background-color: #91b4ed;
@@ -91,6 +97,7 @@ body {
     background-color: #A4C0EF;
     color: black;
 }
+/* Register tab */
 .register{
     position:absolute; right: 900px; top:560px;
     background-color: #91b4ed;
@@ -112,7 +119,9 @@ body {
     background-color: #A4C0EF;
     color: black;
 }
+/* news tab */
 .news {
+    background-color: #dedcdc;
     position:absolute; right:1007px; top:800px;
     width:300px;
     border: 1px solid black;
@@ -138,6 +147,7 @@ body {
     position:absolute; right:760px; top: 525px; 
 }
 .info {
+    background-color: #dedcdc;
     position:absolute; right:550px; top:300px;
     width:500px;
     border: 1px solid black;

@@ -11,10 +11,12 @@ include_once 'includes/dbh.inc.php';
 </head>
 <body>
 <!-- Top navigation menu & logo-->
+<header>
 <?php
 include "includes/logo.php";
 include "includes/menu.php";
 ?>
+</header>
 <!--slideshow place holder -->
 <div class="slideshow">
 <img class="mySlides" src=".git/images/stock1.jpg" alt="stock image 1" width="600" height="300">

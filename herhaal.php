@@ -8,11 +8,14 @@
     <title>Document</title>
 </head>
 <body>
+<header>
     <!-- Top navigation menu & logo-->
 <?php
 include "includes/logo.php";
 include "includes/menu.php";
-
+?>
+</header>
+<?php
 if (isset($_SESSION["useruid"])) {
     header("Location: herhaal2.php");
 }
