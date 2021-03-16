@@ -1,4 +1,5 @@
 <?php 
+
 include_once 'includes/dbh.inc.php';
 ?>
 <!DOCTYPE html>
@@ -22,8 +23,10 @@ include_once 'includes/dbh.inc.php';
 <div class ="overzicht">
     <h4>Medicijnen overzicht</h4>
     <?php
-      $sql = "SELECT * FROM overzicht;";
-      $result = mysqli_query($conn, $sql);
+    $medsort = "SELECT *
+    FROM overzicht
+    ORDER BY content ASC;";
+      $result = mysqli_query($conn, $medsort);
       $resultCheck = mysqli_num_rows($result);
       if ($resultCheck > 0) {
         while ($row = mysqli_fetch_assoc($result)) {

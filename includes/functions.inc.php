@@ -117,3 +117,23 @@ function loginUser($conn, $username, $pwd) {
        exit();
     }
 }
+// Contact form ~insert to database
+function contactform($conn, $emailcontact, $message) {
+    $sql = "INSERT INTO contact (email, message) VALUES (?, ?);";
+    $stmt = mysqli_stmt_init($conn);
+    if (!mysqli_stmt_prepare($stmt, $sql)) {
+        header("location: ../signup.php?error=stmtfailed");
+        exit();
+    }
+}
+// Check if empty field
+function emptyInputForm($emailcontact, $message) {
+    $result;
+    if (empty($emailcontact) || empty($message)){
+        $result = true;
+}
+    else {
+        $result = false;
+    }
+    return $result;
+}

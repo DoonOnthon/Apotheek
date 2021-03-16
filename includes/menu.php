@@ -15,6 +15,7 @@ session_start();
 <a class="active" href="index.php">Home</a>
 <a href="service.php">Service</a>
 <a href="gezondheidsinformatie.php">Voorlichting</a>
+<a href="contact.php">Contact formulier</a>
 <!-- check if user is logged in -->
 <?php
 if (isset($_SESSION["useruid"])) {
