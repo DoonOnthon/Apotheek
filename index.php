@@ -22,9 +22,7 @@ include "includes/menu.php";
 <img class="mySlides" src=".git/images/stock1.jpg" alt="stock image 1" width="600" height="300">
 <img class="mySlides" src=".git/images/stock2.jpg" alt="stock image 2" width="600" height="300">
 <img class="mySlides" src=".git/images/stock3.jpg" alt="stock image 3" width="600" height="300">
-<img class="mySlides" src=".git/images/logop.png" alt="logo image" width="600" height="300">
-<button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
-<button class="button-right" onclick="plusDivs(+1)">&#10095;</button>
+<img class="mySlides" src=".git/images/pharmstock3.jpg" alt="pharm stock image" width="600" height="300">
 </div>
  <!-- java script slide show-->
     <script type="text/javascript">  
@@ -47,7 +45,7 @@ function carousel() {
     <div class="mapouter">
     <div class="gmap_canvas">
         <iframe width="300" height="300" id="gmap_canvas"
- src="https://maps.google.com/maps?q=schagen&t=&z=13&ie=UTF8&iwloc=&output=embed"
+ src="https://maps.google.com/maps?q=Westerduinweg%203,%201755%20LE%20Petten&t=&z=13&ie=UTF8&iwloc=&output=embed"
   frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
     <br>
     </div>
@@ -60,15 +58,15 @@ include "includes/midmenu.php";
 ?>
 <!-- open times -->
 <div class ="times">
-    <h4>opening times</h4>
+    <h4>openings tijden</h4>
     <p>maandag tot vrijdag: 10:00 - 16:00</p>
     <p>zaterdag tot zondag : dicht</p>
 </div>
 <!-- adresses -->
 </div>
 <div class ="adress">
-<h4> adress </h4>
-<p>adress : placeholder </p>
+<h4> adres </h4>
+<p>adres : Westerduinweg 3, 1755 LE Petten </p>
 </div>
 <!-- nieuws -->
 <div class ="news">
@@ -79,7 +77,7 @@ include "includes/midmenu.php";
       $resultCheck = mysqli_num_rows($result);
       if ($resultCheck > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
-          echo $row['subject'] . "<br>";
+          echo $row['content'] . "<br>"; 
         }
       }
     ?>

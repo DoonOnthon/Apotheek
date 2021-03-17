@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-<img src=".git/images/logop.png" class="logop" alt="logo" width="150" height="150" >
+<a class="active" href="index.php"><img src=".git/images/pngegg.png" class="logop" alt="logo" width="150" height="150" ></a>
+<img src=".git/images/greentriangle.png" class="gtriangle" alt="gtriangle" width="" height="" ></a>
 </body>
 </html>

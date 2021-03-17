@@ -8,6 +8,7 @@ body {
 }
 /* link style in menu */
 .menu a {
+    
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -16,24 +17,24 @@ body {
     font-size: 17px;
 }
 /* color change on hover */
-.menu a:hover {
+.menu a:hover:not(.active) {
     background-color: #ddd;
     color: black;
 }
 /* color on active link */
 .menu a.active {
- background-color: #4CAF50;
- color: white;
-}
+    background-color: #4CAF50;
+    color: white;
+  }
 /* google map */
 .map-container{
     position:absolute; right:200px; top:250px;
 }
 .mapouter{
-    position:relative;text-align:right;height:300px;width:300px;
+    position:relative;text-align:right;height:400px;width:400px;
 }
 .gmap_canvas {
-    overflow:hidden;background:none!important;height:300px;width:300px;
+    overflow:hidden;background:none!important;height:400px;width:400px;
 }
 /* Opening times */
 .times {
@@ -43,6 +44,7 @@ body {
     border: 1px solid black;
     padding: 1px;
     margin: 0px;
+    border-radius: 25px;
 }
 /* the adress */
 .adress {
@@ -52,10 +54,11 @@ body {
     border: 1px solid black;
     padding: 5px;
     margin: 0px;
+    border-radius: 25px;
 }
 /* repeat service */
 .herhaal {
-    position:absolute; right:1200px; top:560px;
+    position:absolute; right:1205px; top:560px;
     background-color: #91b4ed;
     border-radius: 20px;
     border: 1px solid #73AD21;
@@ -73,17 +76,20 @@ body {
 }
 .herhaal a:hover {
     background-color: #A4C0EF;
-    color: black;
+    color: white;
+    border-radius: 5%;
+	transform: scale(1.2);
 }
 /* medicin overview */
 .medicin{
-    position:absolute; right:1050px; top:560px;
+    position:absolute; right:980px; top:560px;
     background-color: #91b4ed;
     border-radius: 20px;
     border: 1px solid #73AD21;
     padding: 20px;
     width: 100px;
-    height: 40px
+    height: 40px;
+	transition: border-radius 1s, transform 1s, border 0.2s;
 }
 .medicin a {
     float: left;
@@ -95,11 +101,13 @@ body {
 }
 .medicin a:hover {
     background-color: #A4C0EF;
-    color: black;
+    color: white;
+    border-radius: 5%;
+	transform: scale(1.2);
 }
 /* Register tab */
 .register{
-    position:absolute; right: 900px; top:560px;
+    position:absolute; right: 750px; top:560px;
     background-color: #91b4ed;
     border-radius: 20px;
     border: 1px solid #73AD21;
@@ -117,7 +125,9 @@ body {
 }
 .register a:hover {
     background-color: #A4C0EF;
-    color: black;
+    color: white;
+    border-radius: 5%;
+	transform: scale(1.2);
 }
 /* news tab */
 .news {
@@ -127,6 +137,7 @@ body {
     border: 1px solid black;
     padding: 20px;
     margin: 5px;
+    border-radius: 25px;
 }
 .body {  
     margin: 0;  
@@ -138,14 +149,8 @@ body {
     margin: 100px;  
 }
 .mySlides {  
-   position:absolute; right:650px; top:150px; 
+   position:absolute; right:650px; top:160px; 
 }  
-.button-left {
-    position:absolute; right:1320px; top:525px; 
-}
-.button-right {
-    position:absolute; right:760px; top: 525px; 
-}
 .info {
     background-color: #dedcdc;
     position:absolute; right:550px; top:300px;
@@ -153,4 +158,10 @@ body {
     border: 1px solid black;
     padding: 20px;
     margin: 5px;
+}
+.gtriangle {
+    width:800px;
+    opacity:50%;
+    position:absolute; right:-40px; top:300px;
+    transform: rotate(90deg)
 }

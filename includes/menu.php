@@ -12,7 +12,7 @@ session_start();
 <body>
 <!-- Top navigation menu -->
 <div class="menu">
-<a class="active" href="index.php">Home</a>
+<a class="active" href="index.php">Thuispagina</a>
 <a href="service.php">Service</a>
 <a href="gezondheidsinformatie.php">Voorlichting</a>
 <a href="contact.php">Contact formulier</a>
