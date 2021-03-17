@@ -144,12 +144,11 @@ body {
     background: #e6e6e6;  
 }  
 .mySlides {
+    height:350px;
     max-width: 900px;  
     position: relative;  
-    margin: 100px;  
-}
-.mySlides {  
-   position:absolute; right:650px; top:160px; 
+    margin: 100px; 
+   position:absolute; right:650px; top:110px; 
 }  
 .info {
     background-color: #dedcdc;
@@ -160,8 +159,14 @@ body {
     margin: 5px;
 }
 .gtriangle {
-    width:800px;
+    width:900px;
     opacity:50%;
-    position:absolute; right:-40px; top:300px;
+    position:absolute; right:-60px; top:200px;
     transform: rotate(90deg)
+}
+.loginform {
+    position:absolute; right:50%; top:300px;
+}
+.registerform {
+    position:absolute; right:50%; top:300px;
 }

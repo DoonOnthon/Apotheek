@@ -14,16 +14,23 @@ include "includes/logo.php";
 include "includes/menu.php";
 ?>
 <!-- Sign up form -->
+<div class="registerform">
 <section class ="signup-form">
     <h2>Registreer</h2>
     <form action="includes/signup.inc.php" method="post">
         <input type="text" name="name" placeholder="volledige naam..."> </br>
+</br>
         <input type="text" name="email" placeholder="email..."> </br>
+</br>
         <input type="text" name="uid" placeholder="gebruikersnaam..."> </br>
+</br>
         <input type="password" name="pwd" placeholder="wachtwoord..."> </br>
+</br>
         <input type="password" name="pwdrepeat" placeholder="herhaal wachtwoord..."> </br>
+</br>
         <button type="submit" name="submit">Registreer</button>
     </form>
+</div>
     <?php
     // Error handlers
 if (isset($_GET["error"])) {

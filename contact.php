@@ -18,8 +18,10 @@ include "includes/menu.php";
     <h2>Neem contact op</h2>
     <form action="includes/contact.inc.php" method="post">
         <input type="text" name="emailcontact" placeholder="E-mail"> </br>
+        </br>
         <input type="text" name="message" placeholder="Bericht"> </br>
-        <button type="submit" name="submit">Indienen</button>
+        </br>
+        <button type="submit" name="submit2">Indienen</button>
     </form>
     <?php
 ?>
